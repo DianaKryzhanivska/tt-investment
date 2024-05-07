@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid #f2f3ef;
+}
+
 .header-container {
   padding-top: 4px;
   padding-bottom: 4px;
