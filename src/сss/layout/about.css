@@ -3,6 +3,13 @@
   padding-bottom: 48px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
 .about-title {
   color: var(--text-bold, #2c3136);
   font-size: 27px;
@@ -12,7 +19,26 @@
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
+
 .about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-list {
+    flex-direction: row;
+  }
+}
+
+.about-light-items {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -24,7 +50,20 @@
   background: var(--light-green-bg, #f6fbf7);
 }
 
-.about-item > h3 {
+@media only screen and (min-width: 1440px) {
+  .about-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-title-text-box {
+    width: 342px;
+  }
+}
+
+.about-item h3 {
   color: var(--text-bold, #2c3136);
   font-size: 13.5px;
   font-weight: 600;
@@ -32,24 +71,45 @@
   margin-bottom: 12px;
 }
 
-.about-item > p {
+@media only screen and (min-width: 1440px) {
+  .about-item h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+.about-item p {
   color: var(--text-regular, #787878);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.3em;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-item p {
+    font-size: 16px;
+  }
+}
+
 .about-item-last {
   padding: 32px 38px;
   background: var(--dark-green, #093922);
+  display: flex;
+  flex-direction: column;
 }
 
-.about-item-last > h3 {
+@media only screen and (min-width: 1440px) {
+  .about-item-last {
+    width: 467px;
+  }
+}
+
+.about-item-last h3 {
   color: #fff;
   text-align: center;
 }
 
-.about-item-last > p {
+.about-item-last p {
   color: #fff;
   text-align: center;
 }
@@ -58,10 +118,32 @@
   margin: 50px auto 0;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-img-first {
+    margin: 0;
+    width: 241px;
+    height: 246px;
+  }
+}
+
 .about-img-second {
   margin: 7px 65px 0 auto;
 }
 
+@media only screen and (min-width: 1440px) {
+  .about-img-second {
+    margin: 0 0 0 17px;
+  }
+}
+
 .about-img-third {
   margin: 0 27px 13px 37px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-img-third {
+    margin: 0;
+    width: 416px;
+    height: 416px;
+  }
 }
