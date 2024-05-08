@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<symbol id="burger" viewBox="0 0 32 32"><path fill="#fff" d="M8 9.333h6.667a1.335 1.335 0 0 1 .943 2.277c-.25.25-.589.391-.943.391H8a1.335 1.335 0 0 1-.943-2.277c.251-.25.589-.391.943-.391zM17.333 20H24a1.334 1.334 0 0 1 0 2.668h-6.667a1.334 1.334 0 0 1 0-2.668zM8 14.667h16a1.334 1.334 0 0 1 0 2.668H8a1.334 1.334 0 0 1 0-2.668z" style="fill:var(--color1, #fff)"/></symbol>
+<symbol id="award" viewBox="0 0 32 32"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M8 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" style="stroke:var(--color1, #fff)"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="m16 20 4.533 7.853 2.131-4.311 4.797.309-4.533-7.852M9.069 16l-4.533 7.853 4.797-.311 2.131 4.309 4.533-7.852" style="stroke:var(--color1, #fff)"/></symbol>
+</defs>
+</svg>
