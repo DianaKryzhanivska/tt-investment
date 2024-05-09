@@ -1,7 +1,7 @@
 .benefits-container {
   padding-top: 23px;
   padding-bottom: 48px;
-  background: var(--light-green-bg, #f6fbf7);
+  background: linear-gradient(to bottom, #f6fbf7 75%, #fff 25%);
 }
 
 @media only screen and (min-width: 1440px) {

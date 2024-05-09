@@ -1,4 +1,5 @@
 export const refs = {
+  form: document.querySelector('.hero-form'),
   investInput: document.getElementById('invest'),
   profitInput: document.getElementById('profit'),
   investSum: document.querySelector('.invest-sum'),
