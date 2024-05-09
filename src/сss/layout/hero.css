@@ -53,6 +53,27 @@
   }
 }
 
+.icon-award-bg {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .icon-award-bg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2c3136;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-award-bg svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .hero-text {
   color: var(--text-regular, #787878);
   text-align: center;
