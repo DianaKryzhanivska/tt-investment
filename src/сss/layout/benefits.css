@@ -4,6 +4,15 @@
   background: var(--light-green-bg, #f6fbf7);
 }
 
+@media only screen and (min-width: 1440px) {
+  .benefits-title-button-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+}
+
 .benefits-title {
   color: var(--text-bold, #2c3136);
   font-size: 27px;
@@ -11,6 +20,29 @@
   line-height: 1.3em;
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-title {
+    margin-bottom: 0;
+  }
+}
+
+.benefits-button-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-button-desk {
+    display: block;
+    border-radius: 10px;
+    padding: 16px 21px;
+    background: var(--green, #21a038);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
 }
 
 .benefits-wrapper {
@@ -25,6 +57,13 @@
   gap: 20px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .benefits-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .benefits-item {
   width: 226px;
   background: #fff;
@@ -33,11 +72,23 @@
   box-shadow: 20px 20px 60px 0px rgba(23, 33, 0, 0.06);
 }
 
-.benefits-item div {
+@media only screen and (min-width: 1440px) {
+  .benefits-item {
+    width: 370px;
+  }
+}
+
+.benefits-img-bg {
   border-radius: 24px;
   padding: 41px 31px;
   background: var(--light-green, #d8f1a0);
   margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-img-bg {
+    height: 336px;
+  }
 }
 
 .benefits-item h3 {
@@ -48,6 +99,12 @@
   margin-bottom: 6px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .benefits-item h3 {
+    font-size: 18px;
+  }
+}
+
 .benefits-item p {
   color: var(--text-regular, #787878);
   font-size: 12px;
@@ -55,7 +112,13 @@
   line-height: 1.3em;
 }
 
-.benefits-button {
+@media only screen and (min-width: 1440px) {
+  .benefits-item p {
+    font-size: 16px;
+  }
+}
+
+.benefits-button-mob {
   margin: 0 auto;
   border-radius: 10px;
   padding: 16px 21px;
@@ -64,4 +127,10 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.3em;
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-button-mob {
+    display: none;
+  }
 }
