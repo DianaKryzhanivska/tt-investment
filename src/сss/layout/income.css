@@ -6,6 +6,15 @@
   gap: 28px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .income-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+}
+
 .income-title {
   color: var(--text-bold, #2c3136);
   text-align: center;
@@ -15,16 +24,36 @@
   margin-bottom: 24px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .income-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+}
+
 .income-input-box {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .income-input-box {
+    gap: 12px;
+  }
+}
+
 .income-input-item {
   padding: 18px 32px;
   border-radius: 65px;
   background: var(--light-green-bg, #f6fbf7);
+}
+
+@media only screen and (min-width: 1440px) {
+  .income-input-item {
+    width: 660px;
+    padding: 35px 52px;
+  }
 }
 
 .income-input-item input {
@@ -39,6 +68,13 @@
   font-size: 13.5px;
   font-weight: 600;
   line-height: 1.3em;
+}
+
+@media only screen and (min-width: 1440px) {
+  .income-sum-box {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 
 .income-sum-box h3 {
@@ -60,6 +96,28 @@
   line-height: 1.3em;
 }
 
+@media only screen and (min-width: 1440px) {
+  .income-amount-box {
+    display: none;
+  }
+}
+
+.income-amount-box-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .income-amount-box-desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-bold, #2c3136);
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 16px;
+  }
+}
+
 .payment-container {
   padding: 24px 30px;
   border-radius: 42px;
@@ -69,6 +127,15 @@
   gap: 12px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .payment-container {
+    padding: 44px 30px;
+    gap: 14px;
+    width: 466px;
+    height: 350px;
+  }
+}
+
 .payment-box {
   width: 140px;
   margin: 0 auto;
@@ -76,19 +143,39 @@
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  line-height: 1.3em;
+}
+
+@media only screen and (min-width: 1440px) {
+  .payment-box {
+    width: 184px;
+    height: 95px;
+  }
 }
 
 .payment-title {
+  line-height: 1.3em;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
 }
 
+@media only screen and (min-width: 1440px) {
+  .payment-title {
+    font-size: 16px;
+  }
+}
+
 .payment-sum {
+  line-height: 1.3em;
   color: var(--green, #21a038);
   font-size: 36px;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1440px) {
+  .payment-sum {
+    font-size: 48px;
+  }
 }
 
 .bonus-box {
@@ -101,6 +188,14 @@
   line-height: 1.3em;
 }
 
+@media only screen and (min-width: 1440px) {
+  .bonus-box {
+    width: 378px;
+    margin: 0 auto;
+    padding: 22px 24px;
+  }
+}
+
 .bonus-title {
   width: 119px;
   color: #fff;
@@ -108,10 +203,23 @@
   font-weight: 400;
 }
 
+@media only screen and (min-width: 1440px) {
+  .bonus-title {
+    width: 161px;
+    font-size: 16px;
+  }
+}
+
 .bonus-sum {
   color: var(--green, #21a038);
   font-size: 27px;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1440px) {
+  .bonus-sum {
+    font-size: 36px;
+  }
 }
 
 .payment-invest-button {
@@ -122,4 +230,10 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.3em;
+}
+
+@media only screen and (min-width: 1440px) {
+  .payment-invest-button {
+    font-size: 16px;
+  }
 }
