@@ -1,26 +1,33 @@
 import { refs } from './refs';
 
 const onInvestInputChange = e => {
-  const value = e.target.value;
-  const investSumElem =
-    e.target.parentElement.querySelector('.income-sum-box p');
-  investSumElem.textContent = value.toString();
+  const value = parseFloat(e.target.value);
+  refs.investSum.textContent = value.toLocaleString();
 
-  refs.profitInput.value = value * 7.5;
-  const profitElem =
-    refs.profitInput.parentElement.querySelector('.income-sum-box p');
-  profitElem.textContent = refs.profitInput.value;
+  const profitValue = value * 7.5;
+  refs.profitInput.value = profitValue;
+  refs.profitSum.textContent = profitValue.toLocaleString();
+
+  const bonusValue = profitValue * 0.05;
+  refs.bonusSum.textContent = bonusValue.toFixed(2).toLocaleString();
+
+  const totalPaymentValue = profitValue + bonusValue;
+  refs.paymentSum.textContent = totalPaymentValue.toLocaleString();
 };
 
 const onProfitInputChange = e => {
-  const value = e.target.value;
-  const profitElem = e.target.parentElement.querySelector('.income-sum-box p');
-  profitElem.textContent = value.toString();
+  const value = parseFloat(e.target.value);
+  refs.profitSum.textContent = value.toLocaleString();
 
-  refs.investInput.value = value / 7.5;
-  const investSumElem =
-    refs.investInput.parentElement.querySelector('.income-sum-box p');
-  investSumElem.textContent = refs.investInput.value;
+  const investValue = value / 7.5;
+  refs.investInput.value = investValue;
+  refs.investSum.textContent = investValue.toLocaleString();
+
+  const bonusValue = value * 0.05;
+  refs.bonusSum.textContent = bonusValue.toFixed(2).toLocaleString();
+
+  const totalPaymentValue = value + bonusValue;
+  refs.paymentSum.textContent = totalPaymentValue.toLocaleString();
 };
 
 refs.investInput.addEventListener('input', onInvestInputChange);
